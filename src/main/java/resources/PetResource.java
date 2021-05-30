@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/{userName}/owner/{owner_Id}/pet/{pet_Id}")
-public class PetSource {
+public class PetResource {
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
     public Response modify(@PathParam("userName") String userName, @PathParam("owner_Id") Integer owner_Id, @PathParam("pet_Id") Integer pet_Id,Pet pets) {
