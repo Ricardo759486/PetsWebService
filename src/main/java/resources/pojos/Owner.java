@@ -1,6 +1,7 @@
 package resources.pojos;
 
 public class Owner {
+    private String user;
     private Integer person_Id;
     private String name;
     private String address;
@@ -9,11 +10,20 @@ public class Owner {
 
     }
 
-    public Owner(Integer person_Id, String name, String address, String neighborhood) {
+    public Owner(String user, Integer person_Id, String name, String address, String neighborhood) {
+        this.user = user;
         this.person_Id = person_Id;
         this.name = name;
         this.address = address;
         this.neighborhood = neighborhood;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public Integer getPerson_Id() {
