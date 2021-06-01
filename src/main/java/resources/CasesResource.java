@@ -9,18 +9,8 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
-@Path("/{userName}/owner/{owner_Id}/pet/{pets_Id}/case")
+@Path("/users/owner/pet/{pets_Id}/case")
 public class CasesResource {
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response create(@PathParam("userName") String userName, @PathParam("owner_Id") Integer owner_Id, @PathParam("pets_Id") Integer pets_Id, Case caso) {
-        caso.setPet_Id(3);
-        caso.setCase_Id(4);
-        return Response.status(Response.Status.CREATED)
-                .entity(caso)
-                .build();
-    }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -31,4 +21,17 @@ public class CasesResource {
                 .entity(cases)
                 .build();
     }
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response create(@PathParam("pets_Id") Integer pets_Id, Case caso) {
+        caso.setPet_Id(pets_Id);
+        caso.setCase_Id(4);
+        return Response.status(Response.Status.CREATED)
+                .entity(caso)
+                .build();
+    }
+
+
 }

@@ -7,11 +7,14 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/{userName}/owner/{owner_Id}/pet/{pet_Id}")
+@Path("/owner/{owner_Id}/pet/{pet_Id}")
 public class PetResource {
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
-    public Response modify(@PathParam("userName") String userName, @PathParam("owner_Id") Integer owner_Id, @PathParam("pet_Id") Integer pet_Id,Pet pets) {
+    public Response modify(@PathParam("owner_Id") Integer owner_Id, @PathParam("pet_Id") Integer pet_Id,Pet pets) {
+
+        pets.setOwner_Id(owner_Id);
+        pets.setPet_Id(pet_Id);
 
         return Response.ok()
                 .entity(pets)

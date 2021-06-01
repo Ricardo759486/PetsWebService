@@ -26,6 +26,17 @@ public class Pet {
         this.owner_Id = owner_Id;
     }
 
+    public Pet(Integer pet_Id, String name, String species, String race, String size, String sex, String picture, Integer owner_Id) {
+        this.pet_Id = pet_Id;
+        this.name = name;
+        this.species = species;
+        this.race = race;
+        this.size = size;
+        this.sex = sex;
+        this.picture = picture;
+        this.owner_Id = owner_Id;
+    }
+
     public Integer getPet_Id() {
         return pet_Id;
     }

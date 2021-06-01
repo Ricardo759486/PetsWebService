@@ -18,6 +18,17 @@ public class Owner {
         this.neighborhood = neighborhood;
     }
 
+    @Override
+    public String toString() {
+        return "Owner{" +
+                "user='" + user + '\'' +
+                ", person_Id=" + person_Id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", neighborhood='" + neighborhood + '\'' +
+                '}';
+    }
+
     public String getUser() {
         return user;
     }
