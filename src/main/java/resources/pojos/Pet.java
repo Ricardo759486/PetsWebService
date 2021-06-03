@@ -1,5 +1,7 @@
 package resources.pojos;
 
+import java.util.List;
+
 public class Pet {
     private Integer pet_Id;
     private String microchip;
@@ -10,6 +12,7 @@ public class Pet {
     private String sex;
     private String picture;
     private Integer owner_Id;
+    private Owner owners;
 
     public Pet(){
 
@@ -35,6 +38,47 @@ public class Pet {
         this.sex = sex;
         this.picture = picture;
         this.owner_Id = owner_Id;
+    }
+
+    public Pet(Integer pet_Id, String microchip, String name, String species, String race, String size, String sex, String picture, Integer owner_Id, Owner owners) {
+        this.pet_Id = pet_Id;
+        this.microchip = microchip;
+        this.name = name;
+        this.species = species;
+        this.race = race;
+        this.size = size;
+        this.sex = sex;
+        this.picture = picture;
+        this.owner_Id = owner_Id;
+        this.owners = owners;
+    }
+
+    public Pet(Integer pet_Id, String name, String species, String race, String size, String sex, String picture, Integer owner_Id, Owner owners) {
+        this.pet_Id = pet_Id;
+        this.name = name;
+        this.species = species;
+        this.race = race;
+        this.size = size;
+        this.sex = sex;
+        this.picture = picture;
+        this.owner_Id = owner_Id;
+        this.owners = owners;
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "pet_Id=" + pet_Id +
+                ", microchip='" + microchip + '\'' +
+                ", name='" + name + '\'' +
+                ", species='" + species + '\'' +
+                ", race='" + race + '\'' +
+                ", size='" + size + '\'' +
+                ", sex='" + sex + '\'' +
+                ", picture='" + picture + '\'' +
+                ", owner_Id=" + owner_Id +
+                ", owners=" + owners +
+                '}';
     }
 
     public Integer getPet_Id() {
@@ -107,5 +151,13 @@ public class Pet {
 
     public void setOwner_Id(Integer owner_Id) {
         this.owner_Id = owner_Id;
+    }
+
+    public Owner getOwners() {
+        return owners;
+    }
+
+    public void setOwners(Owner owners) {
+        this.owners = owners;
     }
 }

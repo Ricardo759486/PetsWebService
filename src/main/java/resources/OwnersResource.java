@@ -5,6 +5,8 @@ import resources.pojos.Owner;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
+import java.util.List;
 
 @Path("/users/{userName}/owner/{person_Id}")
 public class OwnersResource {

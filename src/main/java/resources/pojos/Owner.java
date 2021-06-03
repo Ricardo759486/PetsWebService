@@ -1,12 +1,16 @@
 package resources.pojos;
 
+import java.util.List;
+
 public class Owner {
     private String user;
     private Integer person_Id;
     private String name;
     private String address;
     private String neighborhood;
-    public Owner(){
+    private List<Pet> pets;
+
+    public Owner() {
 
     }
 
@@ -18,15 +22,13 @@ public class Owner {
         this.neighborhood = neighborhood;
     }
 
-    @Override
-    public String toString() {
-        return "Owner{" +
-                "user='" + user + '\'' +
-                ", person_Id=" + person_Id +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", neighborhood='" + neighborhood + '\'' +
-                '}';
+    public Owner(String user, Integer person_Id, String name, String address, String neighborhood, List<Pet> pets) {
+        this.user = user;
+        this.person_Id = person_Id;
+        this.name = name;
+        this.address = address;
+        this.neighborhood = neighborhood;
+        this.pets = pets;
     }
 
     public String getUser() {
@@ -67,5 +69,13 @@ public class Owner {
 
     public void setNeighborhood(String neighborhood) {
         this.neighborhood = neighborhood;
+    }
+
+    public List<Pet> getPets() {
+        return pets;
+    }
+
+    public void setPets(List<Pet> pets) {
+        this.pets = pets;
     }
 }
