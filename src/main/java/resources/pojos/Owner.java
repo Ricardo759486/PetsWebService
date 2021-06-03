@@ -1,19 +1,42 @@
 package resources.pojos;
 
+import java.util.List;
+
 public class Owner {
+    private String user;
     private Integer person_Id;
     private String name;
     private String address;
     private String neighborhood;
-    public Owner(){
+    private List<Pet> pets;
+
+    public Owner() {
 
     }
 
-    public Owner(Integer person_Id, String name, String address, String neighborhood) {
+    public Owner(String user, Integer person_Id, String name, String address, String neighborhood) {
+        this.user = user;
         this.person_Id = person_Id;
         this.name = name;
         this.address = address;
         this.neighborhood = neighborhood;
+    }
+
+    public Owner(String user, Integer person_Id, String name, String address, String neighborhood, List<Pet> pets) {
+        this.user = user;
+        this.person_Id = person_Id;
+        this.name = name;
+        this.address = address;
+        this.neighborhood = neighborhood;
+        this.pets = pets;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public Integer getPerson_Id() {
@@ -46,5 +69,13 @@ public class Owner {
 
     public void setNeighborhood(String neighborhood) {
         this.neighborhood = neighborhood;
+    }
+
+    public List<Pet> getPets() {
+        return pets;
+    }
+
+    public void setPets(List<Pet> pets) {
+        this.pets = pets;
     }
 }
