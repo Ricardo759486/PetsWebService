@@ -1,0 +1,794 @@
+{
+	"info": {
+		"_postman_id": "00a610e4-ec08-4959-a44e-0c2a6289fa4d",
+		"name": "PetsWebServices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OwnerGetRequest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/owner?person_Id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"owner"
+					],
+					"query": [
+						{
+							"key": "person_Id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OwnerGetTotalRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/owner/total",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"owner",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OwnerPostRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Felipe Rodríguez\",\r\n    \"address\": \"Calle 74a # 65b - 61\",\r\n    \"neighborhood\": \"San Fernando\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/owner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"owner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OwnerPutRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Felipe Rojas\",\r\n    \"address\": \"Calle 74a # 65b - 59\",\r\n    \"neighborhood\": \"Barrios Unidos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/owner/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"owner",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OwnerDeleteRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/owner/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"owner",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VetGetRequest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/vet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"vet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VetPostRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ricardo Aljoneta\",\r\n    \"address\": \"Vive lejos\",\r\n    \"neighborhood\": \"Funza:v\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/vet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"vet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VetPutRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Robinson Jose\",\r\n    \"address\": \"Vive cerca\",\r\n    \"neighborhood\": \"Cota\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/vet/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"vet",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VetDeleteRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/yesveryguell/vet/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"yesveryguell",
+						"vet",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetGetRequest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/owner/1/pet?race=No se sabe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"owner",
+						"1",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "microchip",
+							"value": "10as1d1a0s",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Robinson Pirse",
+							"disabled": true
+						},
+						{
+							"key": "species",
+							"value": "Perro",
+							"disabled": true
+						},
+						{
+							"key": "race",
+							"value": "No se sabe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetPostRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"microchip\": \"231315412\",\r\n    \"name\": \"Missi\",\r\n    \"species\": \"Gato\",\r\n    \"race\": \"maincoon\",\r\n    \"size\": \"mediano\",\r\n    \"sex\": \"hembra\",\r\n    \"picture\": \"foto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/owner/1/pet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"owner",
+						"1",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetPutRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"microchip\": \"231315412\",\r\n    \"name\": \"Missi\",\r\n    \"species\": \"Gato\",\r\n    \"race\": \"maincoon\",\r\n    \"size\": \"kellogs\",\r\n    \"sex\": \"hembra\",\r\n    \"picture\": \"ola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/owner/1/pet/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"owner",
+						"1",
+						"pet",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetDeleteRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/owner/1/pet/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"owner",
+						"1",
+						"pet",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CaseGetTotalRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/owner/pet/3/case/total",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"owner",
+						"pet",
+						"3",
+						"case",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CaseGetRequest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/owner/pet/3/case",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"owner",
+						"pet",
+						"3",
+						"case"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CasePostRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"created_At\": \"dog\",\r\n    \"type\": \"visit\",\r\n    \"description\": \"lindi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/owner/pet/3/case",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"owner",
+						"pet",
+						"3",
+						"case"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CasePutRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"created_At\": \"cat\",\r\n    \"type\": \"life\",\r\n    \"description\": \"eagle\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/owner/pet/3/case/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"owner",
+						"pet",
+						"3",
+						"case",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CaseDeleteRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users/owner/pet/3/case/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users",
+						"owner",
+						"pet",
+						"3",
+						"case",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VisitGetTotalRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "VisitGetResource",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/vet/2/pet/1/visit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"vet",
+						"2",
+						"pet",
+						"1",
+						"visit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VisitPostRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"created_at\": \"home\",\r\n    \"type\": \"felino\",\r\n    \"description\": \"good healthy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/vet/2/pet/1/visit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"vet",
+						"2",
+						"pet",
+						"1",
+						"visit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VisitPutRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"created_at\": \"veterynary\",\r\n    \"type\": \"felino\",\r\n    \"description\": \"good healthy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/vet/2/pet/3/visit/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"vet",
+						"2",
+						"pet",
+						"3",
+						"visit",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VisitDeleteRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/vet/2/pet/3/visit/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"vet",
+						"2",
+						"pet",
+						"3",
+						"visit",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserGetRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserPostRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"yesveryguell\",\r\n    \"password\": \"juanito123\",\r\n    \"email\": \"feliperojas_15@outlook.com\",\r\n    \"role\": \"owner\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PetsWebService-1.0-SNAPSHOT/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PetsWebService-1.0-SNAPSHOT",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
